@@ -46,10 +46,10 @@ public class PropoView extends View {
 	final int BTN_DOWN	= 1;
 	final int BTN_RIGHT	= 2;
 	final int BTN_LEFT	= 3;
-	final int BTN_TRNGL	= 4;
-	final int BTN_CROSS	= 5;
-	final int BTN_CIRCLE= 6;
-	final int BTN_SQUARE= 7;
+	final int BTN_Y		= 4;
+	final int BTN_A		= 5;
+	final int BTN_B		= 6;
+	final int BTN_X		= 7;
 	final int BTN_R1	= 8;
 	final int BTN_R2	= 9;
 	final int BTN_L1	= 10;
@@ -135,19 +135,19 @@ public class PropoView extends View {
 		for(int i=0;i<BUTTON_NUM;i++){
 			BIT_BUTTONS[i] = 1 << i;
 		}
-		X_BUTTONS[BTN_UP]     =  305; Y_BUTTONS[BTN_UP]     = 218;
-		X_BUTTONS[BTN_DOWN]   =  305; Y_BUTTONS[BTN_DOWN]   = 502;
-		X_BUTTONS[BTN_RIGHT]  =  447; Y_BUTTONS[BTN_RIGHT]  = 360;
-		X_BUTTONS[BTN_LEFT]   =  163; Y_BUTTONS[BTN_LEFT]   = 360;
-		X_BUTTONS[BTN_TRNGL]  =  879; Y_BUTTONS[BTN_TRNGL]  = 218;
-		X_BUTTONS[BTN_CROSS]  =  879; Y_BUTTONS[BTN_CROSS]  = 502;
-		X_BUTTONS[BTN_CIRCLE] = 1021; Y_BUTTONS[BTN_CIRCLE] = 360;
-		X_BUTTONS[BTN_SQUARE] =  737; Y_BUTTONS[BTN_SQUARE] = 360;
-		X_BUTTONS[BTN_R1]     =  126; Y_BUTTONS[BTN_R1]     =  83;
-		X_BUTTONS[BTN_R2]     =  126; Y_BUTTONS[BTN_R2]     = 637;
-		X_BUTTONS[BTN_L1]     = 1058; Y_BUTTONS[BTN_L1]     =  83;
-		X_BUTTONS[BTN_L2]     = 1058; Y_BUTTONS[BTN_L2]     = 637;
-		for(int i=BTN_UP; i<=BTN_SQUARE; i++){
+		X_BUTTONS[BTN_UP]    =  305; Y_BUTTONS[BTN_UP]    = 218;
+		X_BUTTONS[BTN_DOWN]  =  305; Y_BUTTONS[BTN_DOWN]  = 502;
+		X_BUTTONS[BTN_RIGHT] =  447; Y_BUTTONS[BTN_RIGHT] = 360;
+		X_BUTTONS[BTN_LEFT]  =  163; Y_BUTTONS[BTN_LEFT]  = 360;
+		X_BUTTONS[BTN_Y]     =  879; Y_BUTTONS[BTN_Y]     = 218;
+		X_BUTTONS[BTN_A]     =  879; Y_BUTTONS[BTN_A]     = 502;
+		X_BUTTONS[BTN_B]     = 1021; Y_BUTTONS[BTN_B]     = 360;
+		X_BUTTONS[BTN_X]     =  737; Y_BUTTONS[BTN_X]     = 360;
+		X_BUTTONS[BTN_R1]    = 1058; Y_BUTTONS[BTN_R1]    =  83;
+		X_BUTTONS[BTN_R2]    = 1058; Y_BUTTONS[BTN_R2]    = 637;
+		X_BUTTONS[BTN_L1]    =  126; Y_BUTTONS[BTN_L1]    =  83;
+		X_BUTTONS[BTN_L2]    =  126; Y_BUTTONS[BTN_L2]    = 637;
+		for(int i=BTN_UP; i<=BTN_X; i++){
 			HW_BUTTONS[i] = 60;
 			HH_BUTTONS[i] = 60;
 			OX_RINGS[i]   = -82;
